@@ -1,0 +1,64 @@
+{
+    "github": {
+        "credentials": {
+            "accessToken": ""
+        },
+        "label": {
+            "defaultTemplate": "#Moodle",
+            "defaultColor": "c4c",
+            "config": [
+                [
+                    [0, 30],
+                    {
+                        "color": "ff3d00",
+                        "template": "Не сдали ({raw}/{max})",
+                        "description": "можно написать, но видно вроде только в настройках"
+                    }
+                ],
+                [
+                    [30, 60],
+                    {
+                        "color": "ffd740",
+                        "template": "Зачет ({raw}/{max})",
+                        "description": "можно написать, но видно вроде только в настройках"
+                    }
+                ],
+                [
+                    [60, 80],
+                    {
+                        "color": "64dd17",
+                        "template": "Зачет но лучше ({raw}/{max})",
+                        "description": "можно написать, но видно вроде только в настройках"
+                    }
+                ],
+                [
+                    [80, 101],
+                    {
+                        "color": "2979ff",
+                        "template": "Необходимо записаться на сдачу ({raw}/{max})",
+                        "description": "можно написать, но видно вроде только в настройках",
+                        "comment": "Вы набрали {raw} баллов из {max}.\nДля продолжения сдачи необходимо записаться в [таблицу](https://docs.google.com/spreadsheets/d/1hZBXLM_nF7gObG2jjm6lUAF7-wc-_5740SGJ3Rgyu1Y/edit?usp=sharing)\n"
+                    }
+                ]
+            ]
+        }
+    },
+    "moodle": {
+        "baseUrl": "http://e.moevm.info",
+        "credentials": {
+            "username": "",
+            "password": "",
+            "token": ""
+        }
+    },
+    "googleSheet": {
+        "id": "1-KENToVk8vYABspbj-7gUsojEO9lFMzffeNVVACqPEQ",
+        "headers": {
+            "fio": "ФИО",
+            "email": "Email",
+            "github": "github",
+            "username": "username",
+            "group": "Группа"
+        }
+    }
+}
