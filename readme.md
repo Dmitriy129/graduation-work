@@ -3,13 +3,15 @@
 ## Run
 
 ``` bash
+
 python main.py
+
 ```
 
 ## Main config
-`./config/man.json`
+`./configs/man.json`
 
-```json
+```json5
 {
   "github":{...},
   "moodle":{...},
@@ -20,7 +22,7 @@ python main.py
 
 ## GitHub
 
-```json
+```json5
 {
   "credentials": {
         "accessToken": "accessToken" /* accessToken for GitHub user */
@@ -45,7 +47,7 @@ python main.py
 
 ## Moodle
 
-```json
+```json5
 
 {
     "baseUrl": "http://e.moevm.info", /* base url for requests */
@@ -67,7 +69,7 @@ curl --location --request GET 'http://e.moevm.info/login/token.php?username=<use
 
 Response:
 
-```json
+```json5
 {
     "token": "someaccesstoken", /* the value we need */
     "privatetoken": null
@@ -77,10 +79,10 @@ Response:
 ## Google Sheets
 
 
-```json
+```json5
 
 {
-    "id": "", /* id of table: https://docs.google.com/spreadsheets/d/<id>/edit  */
+    "id": "", /* id of table  with users Names and Github logins */
         "headers": { /* table headers  */
             "fio": "ФИО",
             "email": "Email",
@@ -93,9 +95,9 @@ Response:
 
 ## Run config
 
-`./config/run.json`
+`./configs/run.json`
 
-```json
+```json5
 {
     "moodle": {
         "courseId": 47, /* course id */
